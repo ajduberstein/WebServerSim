@@ -98,4 +98,14 @@ public class ServerSystem {
 		}
 		return list.size() == down_items;
 	}
+	
+	public void reset(){		
+		total_time_down_ = 0;
+		devices_ = new Device[]{new Device(1, "ROUTER"), 
+				new Device(2, "ROUTER"), new Device(1, "WEB SERVER"),
+				new Device(2, "WEB SERVER"), new Device(1, "DATA SERVER"), 
+				new Device(2, "DATA SERVER"), new Device(1, "DATA DISK"), 
+				new Device(2, "DATA DISK"), new Device(3, "DATA DISK")};
+	
+	}
 }
